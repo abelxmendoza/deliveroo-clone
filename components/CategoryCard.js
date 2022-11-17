@@ -8,14 +8,18 @@ const CategoryCard = ({imgUrl, title}) => {
         <Image 
             source={{
                 uri: imgUrl,
-        }}
-        className="h-20 w-20 rounded"
+            }} 
+            className="h-22 w-22 rounded"
         />
 
         {/* CategoryCard */}
-        <Text className="absolute bottom-1 left-1 text-white font-bold">
-            {title}
-        </Text>
+
+        <View>
+            <Text className="absolute bottom-1 left-1 text-white font-bold">
+                {title}
+            </Text>
+        </View>
+    
     </TouchableOpacity>
   )
 }

@@ -2,7 +2,8 @@ import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-na
 import React , { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsVerticalIcon } from "react-native-heroicons/outline"
-import Categories from "../components/Categories"
+import Categories from '../components/Categories'
+import FeaturedRow from '../components/FeaturedRow'
 
 
 
@@ -65,10 +66,12 @@ const HomeScreen= () => {
                 </View>
 
         {/* Body */}
-        <ScrollView className="bg-gray-100"
+        <ScrollView 
+            className="bg-gray-100"
             contentContainerStyle={{
                 paddingBottom: 100,
-            }}>
+            }}
+        >
 
 
             {/* Categories */}
@@ -76,12 +79,29 @@ const HomeScreen= () => {
 
 
             {/* Featured Rows */}
-            
 
+            <FeaturedRow
+                id="123"
+                title="Featured"
+                description="Paid placements from our partners"
+                featuredCategory="featured"
+            />
+            
+            <FeaturedRow
+                id="345"
+                title="Tasty Discounts"
+                description="Paid placements from our partners"
+                featuredCategory="discounts"
+            />
+
+            <FeaturedRow
+                id="245"
+                title="Offers Near You!"
+                description="Paid placements from our partners"
+                featuredCategory="offers"
+            />
 
         </ScrollView>
-        
-        
 
     </SafeAreaView>
 
