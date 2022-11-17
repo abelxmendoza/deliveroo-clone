@@ -1,11 +1,11 @@
 {
   "root": true,
+  "project": {
+    "name": "deliveroo-reactnative-clone"
+  },
   "api": {
     "projectId": "yxwzq35q",
     "dataset": "test"
-  },
-  "project": {
-    "name": "deliveroo-reactnative-clone"
   },
   "plugins": [
     "@sanity/base",
