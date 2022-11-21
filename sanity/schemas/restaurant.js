@@ -12,13 +12,7 @@ export default {
     },
    
     {
-      name: 'short_description',
-      title: 'Short Description',
-      type: 'string',
-      of: [{type: 'reference', to: {type: 'dish'}}],
-    },
-   
-    {
+      name: 'short_description',    
       name: 'image',
       title: 'Image of the Restaurant',
       type: 'image',
@@ -37,6 +31,7 @@ export default {
       name: 'address',
       title: 'Restaurant Address',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'rating',
@@ -55,7 +50,11 @@ export default {
       type: 'reference',
       to: [{ type: "category"}],
     },
-
-
+    {
+      name: 'dishes',
+      type: 'array',
+      title: 'Dishes',
+      of: [{ type: "reference", to: [{ type: "dish" }] }],
+    }
   ],
 }

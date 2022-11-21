@@ -31,7 +31,7 @@ const FeaturedRow = ({ title, description, featuredCategory }) => {
              id={123}
              imgUrl="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Wingstop_logo.svg/1200px-Wingstop_logo.svg.png"
              title="Wingstop"
-             rating={4.5}
+             rating={5}
              genre="Wings"
              address="123 Main St."
              short_description="Hot wings and fries"
@@ -53,6 +53,8 @@ const FeaturedRow = ({ title, description, featuredCategory }) => {
              lat={12}
         />
 
+
+
         <RestaurantCard 
              id={123}
              imgUrl="https://discoverlamirada.com/wp-content/uploads/2017/08/flamebroiler2.jpg"
@@ -62,8 +64,8 @@ const FeaturedRow = ({ title, description, featuredCategory }) => {
              address="65321 Coppertone Drive"
              short_description="Hot wings and fries"
              dishes={23}
-             long={32}
-             lat={12}
+             long={26}
+             lat={19}
         />
 
 

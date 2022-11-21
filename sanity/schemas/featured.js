@@ -7,7 +7,7 @@ export default {
         {
             name: "name",
             type: "string",
-            title: "Name of dish",
+            title: "Featured Category name",
             validation: (Rule) => Rule.required(),
       
           },
@@ -19,14 +19,10 @@ export default {
       
           },
           {
-            name: "price",
-            type: "number",
-            title: "Price of the dish in GBP",
-          },
-          {
-            name: "image",
-            type: "image",
-            title: "Image of the Dish",
+            name: "restaurants",
+            type: "array",
+            title: "Restaurants",
+            of: [{ type: "reference", to: [{ type: "restaurant" }] }],
       
           },
 
